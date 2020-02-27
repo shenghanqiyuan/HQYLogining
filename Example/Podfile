@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'HQYLogining_Example' do
+  pod 'HQYLogining', :path => '../'
+
+  target 'HQYLogining_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase'
+  end
+end
